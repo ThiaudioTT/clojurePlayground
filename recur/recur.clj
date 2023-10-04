@@ -2,6 +2,7 @@
 ; Recur transforms a recursion into a loop iteration. Doing this we 
 ; avoid the stack overflow that would otherwise occur and. Is like a recursion
 ; but without it's negative traits like stack overflow.
+; Remember: recur is to be used in tail recursions only, this means that we should call at the end of the function
 
 (def factorial
   (fn [n]
